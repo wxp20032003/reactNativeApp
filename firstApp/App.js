@@ -44,8 +44,8 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f4f4f4',
-    alignItems: 'center',
+    backgroundColor: '#ECEDF1',
+    alignItems:'center',
     justifyContent: 'center'
   },
   avatarview: {//登录图标区域  
