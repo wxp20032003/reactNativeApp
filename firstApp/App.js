@@ -6,7 +6,8 @@ import {
   Button,
   TextInput,
   Alert,
-  StatusBar
+  StatusBar,
+  TouchableHighlight
 
 } from 'react-native';
 import Detail from './Detail';
@@ -24,13 +25,9 @@ class HomeScreen extends React.Component {
           <TextInput style={styles.textinput} placeholder="请输入密码" secureTextEntry={true} />
         </View>
 
-        <View style={styles.buttonview}>
-          <Button
-            onPress={() => navigate('Detail')}
-            title="登录"
-            color="#841584"
-            accessibilityLabel="Learn more about this purple button" />
-        </View>
+        <TouchableHighlight  onPress={() => navigate('Detail')} style={styles.buttonBackground}>
+         <Text style={styles.buttonText}>登录</Text>
+        </TouchableHighlight>
       </View>
     );
   } e
@@ -39,7 +36,7 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1FB9FF',
+    backgroundColor: '#fff',
 
     alignItems: 'center',
     justifyContent: 'center'
@@ -53,11 +50,17 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     fontSize: 16,
   },
-  buttomview: {
-    backgroundColor: '#ECEDF1',
-    flex: 1,
-    width: 200
+  buttonBackground: {
+    backgroundColor: '#5a98de',
+    borderRadius:5,
+    padding:10,
+    width: 200,
   },
+  buttonText:{
+    textAlign:'center',
+    justifyContent:'center',
+    color:'#fff'
+  }
 });
 const SimpleApp = StackNavigator({
   Home: { screen: HomeScreen },
