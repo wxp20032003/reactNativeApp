@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 //导入数据
 import ShareData from "./shareData.json";
+import Icon from 'react-native-vector-icons/FontAwesome';
 //获取屏幕宽度
 let Dimensions = require("Dimensions");
 let {width} = Dimensions.get('window');
@@ -57,18 +58,17 @@ export default class Detail extends Component {
       <Image source={{uri:rowData.icon}} style={styles.iconStyle}/>
       <Text>{rowData.title}</Text>
     </View>
+    <View><Icon name="me" size={16} color="red"/></View>
+    
     </TouchableOpacity>
     );
   }
-
   _onPress(e) {
 
     alert(">>>点击 "+e);
   }
 
 }
-
-
 const styles = StyleSheet.create({
   listViewStyle:{
     flexDirection:'row',

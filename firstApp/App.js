@@ -12,28 +12,30 @@ import {
   Image
 
 } from 'react-native';
-import Detail from './Detail';
+import  MyApp from './src/Home';
 
 import { StackNavigator } from 'react-navigation';
 var { height, width } = Dimensions.get('window');
 
-class HomeScreen extends React.Component {
+class SignIn extends React.Component {
   static navigationOptions = { header: null };
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
+    
         <View style={styles.avatarview}>
           <Image style={styles.avatarimage} source={require('./nsImage/nsbdlogo.png')}>
           </Image>
         </View>
+        
         {/* <StatusBar hidden={false} translucent={true} backgroundColor={"#1FB9FF"} /> */}
         <View style={styles.inputview}>
           <TextInput style={styles.textinput} placeholder="请输入用户名" />
           <TextInput style={styles.textinput} placeholder="请输入密码" secureTextEntry={true} />
         </View>
 
-        <TouchableHighlight onPress={() => navigate('Detail')} style={styles.buttonBackground}>
+        <TouchableHighlight onPress={() => navigate('Home')} style={styles.buttonBackground}>
           <Text style={styles.buttonText}>登录</Text>
         </TouchableHighlight>
       </View>
@@ -52,6 +54,10 @@ const styles = StyleSheet.create({
     height: 150,
     backgroundColor: '#ECEDF1',
     justifyContent: 'center',
+  },
+  logoName:{
+   height:50,
+   fontSize:25
   },
   avatarimage: {//登录图标  
     width: 100,
@@ -81,8 +87,8 @@ const styles = StyleSheet.create({
   }
 });
 const SimpleApp = StackNavigator({
-  Home: { screen: HomeScreen },
-  Detail: { screen: Detail }
+  SignIn: { screen: SignIn },
+  Home: { screen: MyApp }
 });
 
 export default SimpleApp;

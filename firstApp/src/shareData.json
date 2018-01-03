@@ -1,0 +1,59 @@
+{
+  "data" : [
+    {
+       "icon" : "ios-pulse-outline",
+       "title" : "工程状态",
+	   "color": "#4DA9EB"
+    },
+    {
+      "icon" : "ios-pricetag-outline",
+      "title" : "问题管理",
+	  "color": "#F7B55E"
+    },
+    {
+      "icon" : "ios-contacts-outline",
+      "title" : "人员管理",
+	  "color": "#16B78C"
+    },
+    {
+      "icon" : "ios-barcode-outline",
+      "title" : "扫一扫",
+	  "color": "#666666"
+    },
+    {
+      "icon" : "ios-card-outline",
+      "title" : "巡查记录",
+	  "color": "#4DA9EB"
+    },
+    {
+      "icon" : "ios-shuffle-outline",
+      "title" : "审批流转",
+	  "color": "#F7B55E"
+    },
+    {
+      "icon" : "ios-stats-outline",
+      "title" : "维护统计",
+	  "color": "#16B78C"
+    },
+    {
+      "icon" : "ios-trending-up-outline",
+      "title" : "综合分析",
+	  "color": "#F2725E"
+    },
+    {
+      "icon" : "ios-rainy-outline",
+      "title" : "实时雨情",
+	  "color": "#F7B55E"
+    },
+    {
+      "icon" : "ios-photos-outline",
+      "title" : "标准规范",
+	  "color": "#16B78C"
+    },
+	 {
+      "icon" : "ios-paper-outline",
+      "title" : "新闻通知",
+	  "color": "#16B78C"
+    }
+  ]
+}
